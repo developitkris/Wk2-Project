@@ -7,3 +7,12 @@ body{
   background-color: pink;
   color: #310c0c;
 }
+
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+p{
+  font-style: italic;
+}
