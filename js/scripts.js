@@ -12,7 +12,7 @@ if (confidence == 3 || 4){
   } else {
     return result4;
   }
-  if (pace == 2) && (size == 2){
+  if ((pace == 2) && (size == 2)){
     return result3;
   } else {
     return result2;
@@ -23,8 +23,7 @@ if (confidence == 3 || 4){
 //logic2
 if (pace == 1 || 2){
   if (flow == "consistent"){
-    if (size == 1 || 2)
-    {
+    if (size == 1 || 2){
       return result2;
     } else {
       return result4;
@@ -72,5 +71,5 @@ $(document).ready(function(){
       $("#"+trackResult).show(); //show the track paragraph
 
   });
-  
+
 });
