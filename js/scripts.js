@@ -5,8 +5,9 @@ function trackRecommender(confidence, end, pace, flow, size){
   var result3 = java;
   var result4 = php;
 
+//logic1
 if (confidence == 3 || 4){
-  if (end == front){
+  if (end == "front"){
     return result1;
   } else {
     return result4;
@@ -20,8 +21,9 @@ else {
 }
 }
 
+//logic2
 if (pace == 1 || 2){
-  if (flow == consistent){
+  if (flow == "consistent"){
     if (size == 1 || 2){
       return result2;
     } else {
@@ -39,12 +41,29 @@ if (pace == 1 || 2){
     return result2;
   }
 }
+}
 
+//logic3
 
-
-
-
-
-
+//
+}
 
 //user logic (jQUERY)
+$(document).ready(function(){
+  $(".questionnaire").submit(function(event){
+    event.preventDefault();
+
+  var replyConfidence = $("#confidence").val();
+  var replyEnd = $("input:radio[name=end]:checked").val();
+  var replyPace = $("#pace").val();
+  var replyFlow = $("input:radio[name=flow]:checked").val();
+  var replySize = $("#size").val();
+
+  console.log("USER ENTERED: "+replyConfidence+" USER ENTERED: "+replyEnd+" USER ENTERED: "+replyPace+"USER ENTERED:"+replyFlow+"USER ENTERED:"+replySize);
+
+    var replyResult = trackRecommender(replyConfidence, replyEnd, replyPace, replyFlow, replySize);
+
+      $("#"+replyResult).show(); //show the track paragraph
+
+  });
+});
