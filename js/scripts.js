@@ -1,10 +1,10 @@
 //business logic
 function trackRecommender(confidence, end, pace, flow, size){
-  var result1 = ruby;
-  var result2 = c#;
-  var result3 = java;
-  var result4 = php;
-
+  var result1 = "ruby";
+  var result2 = "c#";
+  var result3 = "java";
+  var result4 = "php";
+/*
 //logic1
 if (confidence == 3 || 4){
   if (end == "front"){
@@ -42,9 +42,11 @@ if (pace == 1 || 2){
   }
 }
 }
-
+*/
 //logic3
-
+if ((size == 1 || 2) && (flow == "consistent")){
+  return result2;
+}
 //
 }
 

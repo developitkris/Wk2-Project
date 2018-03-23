@@ -17,7 +17,7 @@
 
       <div class="form-group">
         <label for="name"> 1. How well would you say you think you know what you want to pursue?</label>
-          <select class="form-control" id="confidence">
+          <select class="form-control" id="confidence" required>
             <option placeholder="select the best one"></option>
             <option value="1"> Not at all </option>
             <option value="2"> Somewhat, but unsure </option>
@@ -28,7 +28,7 @@
 
       <div class="form-group" id="end">
         <label for="text"> 2. Which end?</label>
-          <div class="radio">
+          <div class="radio" id="end">
             <label>
             <input type="radio"  name="end" value="front">
               Front-End
@@ -40,7 +40,7 @@
 
       <div class="form-group">
         <label for="name"> 3. What pace?</label>
-          <select class="form-control" id="pace">
+          <select class="form-control" id="pace" required>
             <option placeholder="select the best one"></option>
             <option value="1"> Fast-paced environment </option>
             <option value="2"> Moderately paced environment </option>
@@ -50,7 +50,7 @@
 
       <div class="form-group" id="flow">
         <label for="text"> 4. What flow of work do you prefer? </label>
-          <div class="radio">
+          <div class="radio" id="flow">
             <label>
               <input type="radio" name="flow" value="consistent">
               Consistent & Steady
@@ -62,7 +62,7 @@
 
       <div class="form-group">
       <label for="name"> 5. Which type of business will you work for?</label>
-      <select class="form-control" id="size">
+      <select class="form-control" id="size" required>
         <option placeholder= "select the best one"></option>
         <option value="1"> Big enterprise </option>
         <option value="2"> Medium-sized & established </option>
@@ -77,13 +77,13 @@
     <!--begin result-->
     <div class="container">
       <div class="container container-fluid" id="results">
-        <h2 id=result1> Ruby!</h2>
+        <h2 id="ruby"> Ruby!</h2>
         <p> You would like to focus on building interactive sites and fill them  with interactive dynamic content! You prefer to work in smaller companies so you can get involved in more while having the flexibility of building a range of products.  Ruby on Rails is a popular framework nowadays, and you can't wait to get on that train!</p>
-        <h2 id=result2> C#!</h2>
+        <h2 id="c#"> C#!</h2>
         <p> You like the big kahunas and prefer the steady flow of good work opportunity.   You are comfortable with Microsoft and business software.  It's pretty cool to know one of the most on demand languages on the job market today, because you want a language that will get you a higher liklihood of landing you that job! C# has your name written all over it.</p>
-        <h2 id=result3> Java!</h2>
+        <h2 id="java"> Java!</h2>
         <p> You like the prestige of big enterprises but you would also like to know a language with a broader scope.  You might possibly even be interested in becoming an Android developer someday and want to be a part of creating those high-performance applications today.  You like popular languages that are dependable and won't become less trendy a decade from now.  Java is your concrete and will provide a good backbone for the direction you want to go in development.
-        <h2 id=result4> PHP!</h2>
+        <h2 id="php"> PHP!</h2>
         <p> You think you are more of a back-end person and would relish learning one of the most popular back-end languages today. You aren't yet sure if you would like to work for a smaller or bigger company.  What you do know is that there is flexibility in your language of choice, enough so that there is a demand for this language in either type of business.  You care for its footprint in popular management systems because that just means the language can power a multitude of diverse frameworks.  You don't narrow things down, keep those options open with PHP!</p>
       </div>
     </div>
