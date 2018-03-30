@@ -18,7 +18,7 @@ if (confidence == 3 || 4){
     return result2;
   }
 }
-}
+
 
 //logic2
 if (pace == 1 || 2){
@@ -64,11 +64,11 @@ $(document).ready(function(){
   var replyFlow = $("input:radio[name=flow]:checked").val();
   var replySize = $("#size").val();
 
-  console.log("USER ENTERED:"+replyConfidence+"USER ENTERED:"+replyEnd+"USER ENTERED:"+replyPace+"USER ENTERED:"+replyFlow+"USER ENTERED:"+replySize);
+  console.log(" USER ENTERED: "+replyConfidence+" USER ENTERED: "+replyEnd+" USER ENTERED: "+replyPace+" USER ENTERED: "+replyFlow+" USER ENTERED: "+replySize);
 
     var trackResult = trackRecommender(replyConfidence, replyEnd, replyPace, replyFlow, replySize);
 
-      $("#"+trackResult).show(); //show the track paragraph
+      $("#results#"+trackResult).show(); //show the track paragraph
 
   });
 
