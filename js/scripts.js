@@ -68,7 +68,7 @@ $(document).ready(function(){
 
     var trackResult = trackRecommender(replyConfidence, replyEnd, replyPace, replyFlow, replySize);
 
-      $("#results#"+trackResult).show(); //show the track paragraph
+      $("#"+trackResult).show(); //show the track paragraph
 
   });
 

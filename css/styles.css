@@ -1,5 +1,12 @@
 #results{
-  display:none;
+  font-family: cursive;
+  font-weight: bold;
+  color: blue;
+  font-size: 35px;
+}
+
+div p{
+  display: none;
 }
 
 body{
